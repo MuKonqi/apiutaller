@@ -4,7 +4,7 @@
 ### Dear developer,
 You can make comment lines if you want skip some steps.
 
-You must say or specify your program dependencies and supportted distros in README.md. apiutaller don't control user's distros.
+You must say or specify your program dependencies and supported distros in README.md. apiutaller don't control user's distros.
 
 You must say or specify installing dependencies in README.md. apiutaller don't install dependencies.
 

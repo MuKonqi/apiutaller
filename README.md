@@ -10,7 +10,7 @@ You must say or specify installing dependencies in README.md. apiutaller don't i
 
 You must set up variables in apiutaller.py.
 
-### apiutaller is used as application to be an example.
+### TEAfa is used as application to be an example.
 
 ## Kullanım
 ### Sevgili geliştirici,
@@ -22,4 +22,4 @@ Siz bağımlılıkları kurmayı README.md'de demelisiniz veya belirtmelisiniz. 
 
 Siz apiutaller'de değişkenleri ayarlamalısınız.
 
-### apiutaller örnek olması için uygulama olarak kullanılmıştır.
+### TEAfa örnek olması için uygulama olarak kullanılmıştır.

@@ -22,11 +22,11 @@
 
 import os
 
-appname="apiutaller"
+appname="teafa"
 appfolder="/usr/bin/"
-appfile="apiutaller.py"
+appfile="teafa.py"
 policyfile="python3.policy"
-appdesktopfile="apiutaller.desktop"
+appdesktopfile="teafa.desktop"
 mainappfolder="/usr/local/bin/"
 licensename="WTFPL"
 
@@ -112,7 +112,7 @@ def main_uninstall_EN():
         print("Error! This step is last. Closing apiutaller...")
         exit()
     else:
-        print("Successful! You haven't this "+appname+" at the moment. We are happy if you share uninstalling reason!")
+        print("Successful! You haven't "+appname+" at the moment. We are happy if you share uninstalling reason!")
         exit()
 
 
@@ -152,7 +152,7 @@ def main_install_TR():
         pass
     else:
         os.system("mkdir /usr/share/polkit-1/actions")
-    os.system("cd app ; mv "+policyfile+" /usr/share/polkit-1/actions")
+    os.system("cd app ; chown root:root "+policyfile+" ; mv "+policyfile+" /usr/share/polkit-1/actions")
     if os.path.isfile("/usr/share/polkit-1/actions/"+policyfile):
         pass
     else:

@@ -1,5 +1,8 @@
 # TEAfa (The Example App for apiutaller)
 
+
+#### ---
+### Language: English
 ## Dependencies:
 Python3
 
@@ -10,6 +13,8 @@ All.
 ## License:
 WTFPL
 
+#### ---
+### Dil: Türkçe
 ## Bağımlılıklar:
 Python3
 

@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.x
+Name=peytehow
+Encoding=UTF-8
+Comment=Hello world!
+Path=/usr/local/bin/peytehow
+Exec=peytehow
+Icon=/usr/local/bin/peytehow/icon.png
+Terminal=false
+Type=Application
+Categories=System;

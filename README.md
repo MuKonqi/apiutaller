@@ -22,7 +22,7 @@ You can find Python3 as python3 in the repository of the distro you are using.
 ## Supported platforms:
 All GNU/Linux distros.
 ## License:
-WTFPL
+GNU General Public License, Version: 3
 
 ##### ---
 #### Dil: Türkçe
@@ -46,4 +46,4 @@ Siz Python3'ü python3 olarak kullandığınız dağıtımın deposunda bulabili
 Bütün GNU/Linux dağıtımları.
 
 ## Lisans:
-WTFPL
+GNU General Public License, Version: 3

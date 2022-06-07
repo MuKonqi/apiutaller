@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 
-##### LICENSE
-# Copyright (C) 2021-22 Muhammed Abdurrahman (MuKonqi)
-
-# You just DO WHAT THE FUCK YOU WANT TO.
-# Sadece NE HALT EDERSEN ET.
+##### LICENSE !!!!!
+# Copyright (C) 2022 Muhammed Abdurrahman
+# apiutaller is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# apiutaller is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with apiutaller.  If not, see <https://www.gnu.org/licenses/>.
 
 ##### English
 ## DEAR DEVELOPER,
@@ -28,7 +35,7 @@ appfile="teafa.py"
 policyfile="python3.policy"
 appdesktopfile="teafa.desktop"
 mainappfolder="/usr/local/bin/"
-licensename="WTFPL"
+licensename="GPLv3"
 
 def main_install_EN():
     os.system("chmod +x *")
@@ -125,7 +132,7 @@ def operation_EN():
 
 
 def license_EN():
-    license=input("Hello! I try installing or uninstalling "+appname+".\nI'm licensed with WTFPL!\n"+appname+" is under the "+licensename+"!\nDo you agree there?\nOptions: y or n\nAnswer: ")
+    license=input("Hello! I try installing or uninstalling "+appname+".\nI'm licensed with GPLv3!\n"+appname+" is under the "+licensename+"!\nDo you agree there?\nOptions: y or n\nAnswer: ")
     if license == "y":
         operation_EN()
     if license == "n":
@@ -229,7 +236,7 @@ def operation_TR():
 
 
 def license_TR():
-    license=input("Merhabalar! Ben "+appname+" uygulamasını kurmayı ya da silmeyi deneyeceğim.\nBen WTFPL ile lisanslıyım!\n"+appname+" ise "+licensename+" ile lisanslı!\nBunları kabul ediyor musunuz?\nSeçenekler: e ya da h\nCevap: ")
+    license=input("Merhabalar! Ben "+appname+" uygulamasını kurmayı ya da silmeyi deneyeceğim.\nBen GPLv3 ile lisanslıyım!\n"+appname+" ise "+licensename+" ile lisanslı!\nBunları kabul ediyor musunuz?\nSeçenekler: e ya da h\nCevap: ")
     if license == "e":
         operation_TR()
     if license == "h":
@@ -240,6 +247,7 @@ def license_TR():
 
 
 def entry():
+    print("Copyright (C) 2022 Muhammed Abdurrahman")
     language=input("Choose English or Turkish as a language.\nLütfen İngilizce veya Türkçeyi bir dil olarak seçiniz.\nOptions / Seçenekler: en / tr\nLanguage / Dil: ")
     if language == 'en':
         print("English selected.")

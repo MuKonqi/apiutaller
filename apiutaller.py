@@ -19,6 +19,7 @@
 # You must say or specify your program dependencies and supported distros in README.md. apuitaller don't control user's distros.
 # You must say or specify installing dependencies in README.md. apiutaller don't install dependencies.
 # You must set up variables in apiutaller.py.
+# In the README.md you must say or specify that the user should run the apiutaller with root user.
 
 ##### Turkish
 ## Sevgili geliştirici,
@@ -26,6 +27,7 @@
 # Siz programının bağımlılıklarını ve desteklediği dağıtımları README.md içinde demelisiniz veya belirtmelisiniz. apiutaller, kullanıcının dağıtımını kontrol etmez.
 # Siz bağımlılıkları kurmayı README.md'de demelisiniz veya belirtmelisiniz. apiutaller, bağımlılıkları kurmaz.
 # Siz apiutaller.py'de değişkenleri ayarlamalısınız.
+# README.md'de, kullanıcının apiutaller'ı root kullanıcı ile çalıştırması gerektiğini söylemeli veya belirtmelisiniz.
 
 import os
 

@@ -13,6 +13,8 @@ You must say or specify installing dependencies in README.md. apiutaller don't i
 
 You must set up variables in apiutaller.py.
 
+In the README.md you have to say or specify that the user should run the apiutaller with root user.
+
 ### TEAfa is used as application to be an example.
 ## Dependencies:
 Python3
@@ -35,6 +37,8 @@ Siz programının bağımlılıklarını ve desteklediği dağıtımları README
 Siz bağımlılıkları kurmayı README.md'de demelisiniz veya belirtmelisiniz. apitaller, bağımlılıkları kurmaz.
 
 Siz apiutaller'de değişkenleri ayarlamalısınız.
+
+README.md'de, kullanıcının apiutaller'ı root kullanıcı ile çalıştırması gerektiğini söylemeli veya belirtmelisiniz.
 
 ### TEAfa örnek olması için uygulama olarak kullanılmıştır.
 ## Bağımlılıklar:

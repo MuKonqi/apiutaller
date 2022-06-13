@@ -48,8 +48,7 @@ def main_install_EN():
     if os.path.isfile(appfolder+appname):
         pass
     else:
-        print("Error! This step is first. Closing apiutaller...")
-        exit()
+        exit("Error! This step is first. Closing apiutaller...")
         
     if os.path.isdir("/usr/share/polkit-1/actions"):
         pass
@@ -59,8 +58,7 @@ def main_install_EN():
     if os.path.isfile("/usr/share/polkit-1/actions/"+policyfile):
         pass
     else:
-        print("Error! This step is second. Closing apiutaller...")
-        exit()
+        exit("Error! This step is second. Closing apiutaller...")
 
     if os.path.isdir("/usr/share/applications"):
         pass
@@ -70,8 +68,7 @@ def main_install_EN():
     if os.path.isfile("/usr/share/applications/"+appdesktopfile):
         pass
     else:
-        print("Error! This step is third. Closing apiutaller...")
-        exit()
+        exit("Error! This step is third. Closing apiutaller...")
 
     if os.path.isdir(mainappfolder):
         pass
@@ -85,42 +82,29 @@ def main_install_EN():
     os.system("mkdir "+mainappfolder+appname+"/apiutaller")
     os.system("rm -rf app ; mv * "+mainappfolder+appname+"/apiutaller")
     if os.path.isdir(mainappfolder+appname):
-        print("Successful! You have this program "+appname+" at the moment. Thank you for choosing us!")
-        exit()
+        exit("Successful! You have this program "+appname+" at the moment. Thank you for choosing us!")
     else:
-        print("Error! This step is last. Closing apiutaller...")
-        exit()
+        exit("Error! This step is last. Closing apiutaller...")
 
 
 def main_uninstall_EN():
     os.system("cd "+appfolder+" ; rm "+appname)
     if os.path.isfile(appfolder+appname):
-        print("Error! This step is first. Closing apiutaller...")
-        exit()
-    else:
-        pass
+        exit("Error! This step is first. Closing apiutaller...")
         
     os.system("cd /usr/share/polkit-1/actions ; rm "+policyfile)
     if os.path.isfile("/usr/share/polkit-1/actions/"+policyfile):
-        print("Error! This step is second. Closing apiutaller...")
-        exit()
-    else:
-        pass
+        exit("Error! This step is second. Closing apiutaller...")
 
     os.system("cd /usr/share/applications ; rm "+appdesktopfile)
     if os.path.isfile("/usr/share/applications/"+appdesktopfile):
-        print("Error! This step is third. Closing apiutaller...")
-        exit()
-    else:
-        pass
+        exit("Error! This step is third. Closing apiutaller...")
 
     os.system("cd "+mainappfolder+" ; rm -rf "+appname)
     if os.path.isdir(mainappfolder+appname):
-        print("Error! This step is last. Closing apiutaller...")
-        exit()
+        exit("Error! This step is last. Closing apiutaller...")
     else:
-        print("Successful! You haven't "+appname+" at the moment. We are happy if you share uninstalling reason!")
-        exit()
+        exit("Successful! You haven't "+appname+" at the moment. We are happy if you share uninstalling reason!")
 
 
 def operation_EN():
@@ -136,9 +120,7 @@ def license_EN():
     if license == "y":
         operation_EN()
     if license == "n":
-        print("I'm sorry, you can't use "+appname+" and apiutaller, because you don't agree licenses!\nClosing apiutaller...")
-        exit()
-
+        exit("I'm sorry, you can't use "+appname+" and apiutaller, because you don't agree licenses!\nClosing apiutaller...")
 
 
 def main_install_TR():
@@ -152,8 +134,7 @@ def main_install_TR():
     if os.path.isfile(appfolder+appname):
         pass
     else:
-        print("Hata! Bu adım birinci. apitaller kapatılıyor...")
-        exit()
+        exit("Hata! Bu adım birinci. apitaller kapatılıyor...")
         
     if os.path.isdir("/usr/share/polkit-1/actions"):
         pass
@@ -163,8 +144,7 @@ def main_install_TR():
     if os.path.isfile("/usr/share/polkit-1/actions/"+policyfile):
         pass
     else:
-        print("Hata! Bu adım ikinci. apitaller kapatılıyor...")
-        exit()
+        exit("Hata! Bu adım ikinci. apitaller kapatılıyor...")
 
     if os.path.isdir("/usr/share/applications"):
         pass
@@ -174,8 +154,7 @@ def main_install_TR():
     if os.path.isfile("/usr/share/applications/"+appdesktopfile):
         pass
     else:
-        print("Hata! Bu adım üçüncü. apitaller kapatılıyor...")
-        exit()
+        exit("Hata! Bu adım üçüncü. apitaller kapatılıyor...")
 
     if os.path.isdir(mainappfolder):
         pass
@@ -189,42 +168,29 @@ def main_install_TR():
     os.system("mkdir "+mainappfolder+appname+"/apiutaller")
     os.system("rm -rf app ; mv * "+mainappfolder+appname+"/apiutaller")
     if os.path.isdir(mainappfolder+appname):
-        print("Başarılı! Siz artık "+appname+" programına sahipsiniz. Bizi seçtiğiniz için teşekkürler!")
-        exit()
+        exit("Başarılı! Siz artık "+appname+" programına sahipsiniz. Bizi seçtiğiniz için teşekkürler!")
     else:
-        print("Hata! Bu adım sonuncu. apitaller kapatılıyor...")
-        exit()
+        exit("Hata! Bu adım sonuncu. apitaller kapatılıyor...")
 
 
 def main_uninstall_TR():
     os.system("cd "+appfolder+" ; rm "+appname)
     if os.path.isfile(appfolder+appname):
-        print("Hata! Bu adım birinci. apiutaller kapatılıyor...")
-        exit()
-    else:
-        pass
+        exit("Hata! Bu adım birinci. apiutaller kapatılıyor...")
         
     os.system("cd /usr/share/polkit-1/actions ; rm "+policyfile)
     if os.path.isfile("/usr/share/polkit-1/actions/"+policyfile):
-        print("Hata! Bu adım ikinci. apiutaller kapatılıyor...")
-        exit()
-    else:
-        pass
+        exit("Hata! Bu adım ikinci. apiutaller kapatılıyor...")
 
     os.system("cd /usr/share/applications ; rm "+appdesktopfile)
     if os.path.isfile("/usr/share/applications/"+appdesktopfile):
-        print("Hata! Bu adım üçüncü. apiutaller kapatılıyor...")
-        exit()
-    else:
-        pass
+        exit("Hata! Bu adım üçüncü. apiutaller kapatılıyor...")
 
     os.system("cd "+mainappfolder+" ; rm -rf "+appname)
     if os.path.isdir(mainappfolder+appname):
-        print("Hata! Bu adım sonuncu. apiutaller kapatılıyor...")
-        exit()
+        exit("Hata! Bu adım sonuncu. apiutaller kapatılıyor...")
     else:
-        print("Başarılı! Siz artık "+appname+" programına sahip değilsiniz. Kaldırma sebebini bizle paylaşırsanız seviniriz.")
-        exit()        
+        exit("Başarılı! Siz artık "+appname+" programına sahip değilsiniz. Kaldırma sebebini bizle paylaşırsanız seviniriz.")       
 
 
 def operation_TR():
@@ -240,13 +206,14 @@ def license_TR():
     if license == "e":
         operation_TR()
     if license == "h":
-        print("Üzgünüm, siz "+appname+" ile apiutaller'i kullanamazsınız, çünkü siz lisansları kabul etmediniz!\napuitaller kapatılıyor...")
-        exit()
+        exit("Üzgünüm, siz "+appname+" ile apiutaller'i kullanamazsınız, çünkü siz lisansları kabul etmediniz!\napuitaller kapatılıyor...")
 
 
 
 
 def entry():
+    if not os.getuid() == 0:
+        exit("\nOnly root can run apiutaller!\nSadece kök apiutaller'i çalıştırabilir.\nClosing... / Kapatılıyor...")
     print("Copyright (C) 2022 Muhammed Abdurrahman")
     language=input("Choose English or Turkish as a language.\nLütfen İngilizce veya Türkçeyi bir dil olarak seçiniz.\nOptions / Seçenekler: en / tr\nLanguage / Dil: ")
     if language == 'en':

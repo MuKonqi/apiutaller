@@ -38,6 +38,7 @@ policyfile="python3.policy"
 appdesktopfile="teafa.desktop"
 mainappfolder="/usr/local/bin/"
 licensename="GPLv3"
+appdev="MuKonqi"
 
 def main_install_EN():
     os.system("chmod +x *")
@@ -106,7 +107,7 @@ def main_uninstall_EN():
     if os.path.isdir(mainappfolder+appname):
         exit("Error! This step is last. Closing apiutaller...")
     else:
-        exit("Successful! You haven't "+appname+" at the moment. We are happy if you share uninstalling reason!")
+        exit("Successful! You haven't "+appname+" at the moment. We will be happy if you share the uninstalling reason with "+appdev+".")
 
 
 def operation_EN():
@@ -192,7 +193,7 @@ def main_uninstall_TR():
     if os.path.isdir(mainappfolder+appname):
         exit("Hata! Bu adım sonuncu. apiutaller kapatılıyor...")
     else:
-        exit("Başarılı! Siz artık "+appname+" programına sahip değilsiniz. Kaldırma sebebini bizle paylaşırsanız seviniriz.")       
+        exit("Başarılı! Siz artık "+appname+" programına sahip değilsiniz. Kaldırma sebebini "+appdev+" ile paylaşırsanız mutlu olacağız.")       
 
 
 def operation_TR():
@@ -214,9 +215,9 @@ def license_TR():
 
 
 def entry():
+    print("Copyright (C) 2022 Muhammed Abdurrahman")
     if not os.getuid() == 0:
         exit("\nOnly root can run apiutaller!\nSadece kök apiutaller'i çalıştırabilir.\nClosing... / Kapatılıyor...")
-    print("Copyright (C) 2022 Muhammed Abdurrahman")
     language=input("Choose English or Turkish as a language.\nLütfen İngilizce veya Türkçeyi bir dil olarak seçiniz.\nOptions / Seçenekler: en / tr\nLanguage / Dil: ")
     if language == 'en':
         print("English selected.")

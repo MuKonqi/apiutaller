@@ -8,7 +8,7 @@ You can make comment lines if you want skip some steps.
 
 You must set up variables in apiutaller.py.
 
-In the README.md you have to say or specify that the user should run the apiutaller with root user.
+In the README.md you have to specify that the user should run the apiutaller with root user.
 
 ### TEAfa is used as application to be an example.
 ## Dependencies:

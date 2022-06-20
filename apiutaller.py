@@ -30,7 +30,6 @@
 
 
 # Import necessary modules for apiutaller!
-from cgi import print_arguments
 import os
 from sys import platform
 
@@ -66,7 +65,7 @@ python3_pip3_dependencies=any # Options: "dependencies" and any
 
 
 # apiutaller
-apiutaller="v1.0.1"
+apiutaller="v1.0.2"
 
 
 

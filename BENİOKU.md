@@ -3,15 +3,11 @@
 [Bu belgeyi İngilizce olarak görüntelemek istiyorsanız bu cümlenin üstüne tıklayın.](https://github.com/MuKonqi/apiutaller/blob/main/README.md)
 ## Kullanım
     Sevgili geliştirici,
-Siz bazı adımları atlamak istersen yorum satırları yapabilirsiniz.
+Bazı adımları atlamak isterseniz yorum satırları yapabilirsiniz.
 
-Siz programının bağımlılıklarını ve desteklediği dağıtımları README.md içinde demelisiniz veya belirtmelisiniz. apitaller kurucu ve aputaller silici, kullanıcının dağıtımını kontrol etmez.
+apiutaller'de değişkenleri ayarlamalısınız.
 
-Siz bağımlılıkları kurmayı README.md'de demelisiniz veya belirtmelisiniz. apitaller, bağımlılıkları kurmaz.
-
-Siz apiutaller'de değişkenleri ayarlamalısınız.
-
-README.md'de, kullanıcının apiutaller'ı root kullanıcı ile çalıştırması gerektiğini söylemeli veya belirtmelisiniz.
+README.md'de, kullanıcının apiutaller'ı root kullanıcı ile çalıştırması gerektiğini belirtmelisiniz.
 
 ### TEAfa örnek olması için uygulama olarak kullanılmıştır.
 ## Bağımlılıklar:

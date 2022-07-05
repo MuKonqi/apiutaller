@@ -58,14 +58,14 @@ void_xbps_support="true" # Options: true and false
 void_xbps_dependencies="python3" # Options: "dependencies" and any
 pisi_pisi_support="true" # Options: true and false
 pisi_pisi_dependencies="python3" # Options: "dependencies" and any
-gnulinux_support="true" # Options: true and false
+other_gnulinux_support="true" # Options: true and false
 python_pip_dependencies=any # Options: "dependencies" and any
 python3_pip3_dependencies=any # Options: "dependencies" and any
 
 
 
 # apiutaller
-apiutaller="v1.0.2"
+apiutaller="v1.1"
 
 
 
@@ -81,7 +81,7 @@ def main_install():
         pass
     else:
         os.system("mkdir "+appfolder)
-    os.system("cd app ; chmod +x "+appfile+" ; mv "+appfile+" "+appname+" ; mv "+appname+" "+appfolder)
+    os.system("cd app ; chmod +x "+appfile+" ; mv "+appfile+" "+appname+" ; cp "+appname+" "+appfolder)
     if os.path.isfile(appfolder+appname):
         pass
     else:
@@ -94,7 +94,7 @@ def main_install():
         pass
     else:
         os.system("mkdir /usr/share/polkit-1/actions")
-    os.system("cd app ; mv "+policyfile+" /usr/share/polkit-1/actions")
+    os.system("cd app ; chmod +x "+policyfile+" ; cp "+policyfile+" /usr/share/polkit-1/actions/")
     if os.path.isfile("/usr/share/polkit-1/actions/"+policyfile):
         pass
     else:
@@ -107,7 +107,7 @@ def main_install():
         pass
     else:
         os.system("mkdir /usr/share/applications")
-    os.system("cd app ; mv "+appdesktopfile+" /usr/share/applications")
+    os.system("cd app ; cp "+appdesktopfile+" /usr/share/applications")
     if os.path.isfile("/usr/share/applications/"+appdesktopfile):
         pass
     else:
@@ -124,9 +124,9 @@ def main_install():
         else:
             os.system("mkdir "+mainappfolder)
     os.system("mkdir "+mainappfolder+appname)
-    os.system("cd app ; mv * "+mainappfolder+appname)
+    os.system("cd app ; cp * "+mainappfolder+appname)
     os.system("mkdir "+mainappfolder+appname+"/apiutaller")
-    os.system("rm -rf app ; mv * "+mainappfolder+appname+"/apiutaller")
+    os.system("rm -rf app ; cp * "+mainappfolder+appname+"/apiutaller")
     if os.path.isdir(mainappfolder+appname):
         if lang == "en":
             exit("Successful! You have this program "+appname+" at the moment. Thank you for choosing us!")
@@ -213,13 +213,18 @@ def control_and_install():
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")            
 
     elif platform == "linux":
-        main_install()
-
+        if other_gnulinux_support == "true":
+            main_install()
+        else:
+            if lang == "en":
+                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+            if lang == "tr":
+                exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")
     else:
         if lang == "en":
-            exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+            exit("I'm sorry, you can't use "+appname+"! Because your OS not supported from "+appname+".\nClosing apiutaller...")
         if lang == "tr":
-                exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")
+            exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin İS'niz "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")
     
 
 

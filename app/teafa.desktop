@@ -3,7 +3,7 @@
 Version=x
 Name=TEAfa
 Encoding=UTF-8
-Comment=The Example App For apiutaller
+Comment=The Example App for apiutaller
 Path=/usr/local/bin/teafa
 Exec=/usr/bin/teafa
 Icon=/usr/local/bin/teafa/icon.png

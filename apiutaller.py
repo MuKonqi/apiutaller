@@ -38,12 +38,14 @@ from sys import platform
 # VARIABLES !!!!!
 ## Don't forget to change and control them!
 ## Warning! You must use "" when you don't use any.
-appname="teafa" # Don't forget to change this!
+appname="TEAfa" # Don't forget to change this!
 appfolder="/usr/bin/" # Don't forget to change this!
-appfile="teafa.py" # Don't forget to change this!
+appfileold="teafa.py" # Don't forget to change this!
+appfilenew="teafa" # Don't forget to change this!
 policyfile="python3.policy" # Options: policy file and any
 appdesktopfile="teafa.desktop" # Options: desktop file and any
 mainappfolder="/usr/local/bin/" # Don't forget to change this!
+mainappfoldername="teafa" # Don't forget to change this!
 licensename="GPLv3" # Don't forget to change this!
 appdev="MuKonqi" # Don't forget to change this!
 debian_apt_support="true" # Options: true and false
@@ -65,7 +67,7 @@ python3_pip3_dependencies=any # Options: "dependencies" and any
 
 
 # apiutaller
-apiutaller="v1.1"
+apiutaller="v1.2"
 
 
 
@@ -81,7 +83,7 @@ def main_install():
         pass
     else:
         os.system("mkdir "+appfolder)
-    os.system("cd app ; chmod +x "+appfile+" ; mv "+appfile+" "+appname+" ; cp "+appname+" "+appfolder)
+    os.system("cd app ; chmod +x "+appfileold+" ; mv "+appfileold+" "+appfilenew+" ; cp "+appfilenew+" "+appfolder)
     if os.path.isfile(appfolder+appname):
         pass
     else:
@@ -123,10 +125,10 @@ def main_install():
             os.system("mkdir /usr/local ; mkdir /usr/local/bin/")
         else:
             os.system("mkdir "+mainappfolder)
-    os.system("mkdir "+mainappfolder+appname)
-    os.system("cd app ; cp -r * "+mainappfolder+appname)
-    os.system("mkdir "+mainappfolder+appname+"/apiutaller")
-    os.system("cp -r * "+mainappfolder+appname+"/apiutaller")
+    os.system("mkdir "+mainappfolder+mainappfoldername)
+    os.system("cd app ; cp -r * "+mainappfolder+mainappfoldername)
+    os.system("mkdir "+mainappfolder+mainappfoldername+"/apiutaller")
+    os.system("cp -r * "+mainappfolder+mainappfoldername+"/apiutaller")
     if os.path.isdir(mainappfolder+appname):
         if lang == "en":
             exit("Successful! You have this program "+appname+" at the moment. Thank you for choosing us!")
@@ -229,8 +231,8 @@ def control_and_install():
 
 
 def main_uninstall():
-    os.system("cd "+appfolder+" ; rm "+appname)
-    if os.path.isfile(appfolder+appname):
+    os.system("cd "+appfolder+" ; rm "+appfilenew)
+    if os.path.isfile(appfolder+appfilenew):
         if lang == "en":
             exit("Error! This step is first. Closing apiutaller...")
         if lang == "tr":
@@ -250,8 +252,8 @@ def main_uninstall():
         if lang == "tr":
             exit("Hata! Bu adım üçüncü. apiutaller kapatılıyor...")
 
-    os.system("cd "+mainappfolder+" ; rm -rf "+appname)
-    if os.path.isdir(mainappfolder+appname):
+    os.system("cd "+mainappfolder+" ; rm -rf "+mainappfoldername)
+    if os.path.isdir(mainappfolder+mainappfoldername):
         if lang == "en":
             exit("Error! This step is last. Closing apiutaller...")
         if lang == "tr":

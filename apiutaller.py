@@ -271,7 +271,7 @@ def info():
         print("Welcome to apiutaller "+apiutaller+"!\napiutaller is under the GPLv3 license.\nDeveloper of apiutaller is MuKonqi (Muhammed Abdurrahman).")
         ioa=input("What do you want to do at the moment?\nOptions: install (for "+appname+"), uninstall (for "+appname+"), exit\nAnswer: ")
     if lang == "tr":
-        print("apiutaller programına hoşgeldiniz!\napiutaller GPLv3 lisansı altındadır.\napiutaller programının geliştiricisi MuKonqi (Muhammed Abdurrahman) idir.")
+        print("apiutaller "+apiutaller+" programına hoşgeldiniz!\napiutaller GPLv3 lisansı altındadır.\napiutaller programının geliştiricisi MuKonqi (Muhammed Abdurrahman) idir.")
         ioa=input("Şuan ne yapmak istersiniz?\nSeçenekler: kur ("+appname+" için), sil ("+appname+" için), çıkış\nCevap: ")
     if ioa == "install" or ioa == "kur":
         control_and_install()

@@ -84,7 +84,7 @@ def main_install():
     else:
         os.system("mkdir "+appfolder)
     os.system("cd app ; chmod +x "+appfileold+" ; mv "+appfileold+" "+appfilenew+" ; cp "+appfilenew+" "+appfolder)
-    if os.path.isfile(appfolder+appname):
+    if os.path.isfile(appfolder+appfilenew):
         pass
     else:
         if lang == "en":
@@ -129,7 +129,7 @@ def main_install():
     os.system("cd app ; cp -r * "+mainappfolder+mainappfoldername)
     os.system("mkdir "+mainappfolder+mainappfoldername+"/apiutaller")
     os.system("cp -r * "+mainappfolder+mainappfoldername+"/apiutaller")
-    if os.path.isdir(mainappfolder+appname):
+    if os.path.isdir(mainappfolder+mainappfoldername):
         if lang == "en":
             exit("Successful! You have this program "+appname+" at the moment. Thank you for choosing us!")
         if lang == "tr":

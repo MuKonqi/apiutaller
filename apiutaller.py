@@ -67,7 +67,7 @@ python3_pip3_dependencies=any # Options: "dependencies" and any
 
 
 # apiutaller
-apiutaller="v1.2"
+apiutaller="v1.2.1"
 
 
 
@@ -131,7 +131,7 @@ def main_install():
     os.system("cp -r * "+mainappfolder+mainappfoldername+"/apiutaller")
     if os.path.isdir(mainappfolder+mainappfoldername):
         if lang == "en":
-            exit("Successful! You have this program "+appname+" at the moment. Thank you for choosing us!")
+            exit("Successful! You have "+appname+" at the moment. Thank you for choosing us!")
         if lang == "tr":
             exit("Başarılı! Siz artık "+appname+" programına sahipsiniz. Bizi seçtiğiniz için teşekkürler!")        
     else:

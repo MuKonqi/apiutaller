@@ -50,7 +50,7 @@ def entry():
 
     def def_wrong_answer():
         if lang == "en":
-            print("\n\n\n\n\n    FATAL ERROR!\n\nTEAfunkown has encountered a fatal problem and needs to be closed and restarted.\n\nCollecting some error information right now... %3 complete.")
+            print("\n\n\n\n\n    FATAL ERROR!\n\n TEAf"+word_after_TEAf+" has encountered a fatal problem and needs to be closed and restarted.\n\nCurrently collecting some error information... %3 complete.")
             time.sleep(1)
             print("Currently collecting some error information... %21 complete.")
             time.sleep(1)
@@ -65,7 +65,7 @@ def entry():
             print("Currently collecting some error information... %100 (completely) complete.")
             print("\nThese were a joke. Maybe it wasn't funny but since you gave 2 wrong answers this was triggered.\n\n\n\n\n")
         elif lang == "tr":
-            print("\n\n\n\n\n     ÖLÜMCÜL HATA!\n\nTEAfunkown önemli bir sorunla karşılaştı ve kapatılıp yeniden başlatılması gerekiyor.\n\nŞu anda bazı hata bilgileri toplanıyor... %3 tamamlandı.")
+            print("\n\n\n\n\n     ÖLÜMCÜL HATA!\n\n TEAf"+word_after_TEAf+" önemli bir sorunla karşılaştı ve kapatılıp yeniden başlatılması gerekiyor.\n\nŞu anda bazı hata bilgileri toplanıyor... %3 tamamlandı.")
             time.sleep(1)
             print("Şu anda bazı hata bilgileri toplanıyor... %21 tamamlandı.")
             time.sleep(1)
@@ -108,6 +108,9 @@ def entry():
         else:
             wrong_answer+=1
             print('Unfortunately your answer is wrong. The correct answer was 44.')
+
+        if wrong_answer == 2:
+            def_wrong_answer()
 
         question4=input("\nWhich is sentence is spelled correctly:\n   A) I think you will be better in future.\n   B) i think u will be better in future\nYour answer: ")
         if question4 == "A)" or question4 == "a)" or question4 == "a" or question4 == "A":
@@ -158,7 +161,10 @@ def entry():
         else:
             wrong_answer+=1
             print('Maalesef cevabınız yanlış. Doğru cevap 44 idi.')
-        
+
+        if wrong_answer == 2:
+            def_wrong_answer()
+
         question4=input("\nHangi cümle doğru yazılmış:\n A) Bence gelecekte daha iyi olacaksınız.\n B) bence gelcekte daha ii olcaksınız\nCevabınız: ")
         if question4 == "A)" or question4 == "a)" or question4 == "a" or question4 == "A":
             print("Tebrikler!")

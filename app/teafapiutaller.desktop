@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=x
+Name=TEAfapiutaller
+Encoding=UTF-8
+Comment=The Example App for apiutaller
+Path=/usr/local/bin/teafapiutaller
+Exec=/usr/bin/teafapiutaller
+Icon=/usr/local/bin/teafapiutaller/icon.png
+Terminal=true
+Type=Application
+Categories=System;

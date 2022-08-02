@@ -9,7 +9,7 @@ apiutaller'de değişkenleri ayarlamalısınız.
 
 README.md'de, kullanıcının apiutaller'ı root kullanıcı ile çalıştırması gerektiğini belirtmelisiniz.
 
-### TEAfa örnek olması için uygulama olarak kullanılmıştır.
+### [TEAfapiutaller](https://github.com/MuKonqi/teafunknown) örnek olması için uygulama olarak kullanılmıştır.
 ## Bağımlılıklar:
 Python3
 

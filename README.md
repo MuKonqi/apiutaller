@@ -1,4 +1,4 @@
-# apiutaller
+# Apiutaller
 ## Language: English
 [If you want to view this document in Turkish, you click on this sentence.](https://github.com/MuKonqi/apiutaller/blob/main/BENİOKU.md)
 ## Using
@@ -8,9 +8,9 @@ You can make comment lines if you want skip some steps.
 
 You must set up variables in apiutaller.py.
 
-In the README.md you have to specify that the user should run the apiutaller with root user.
+In the README.md you have to specify that the user should run the Apiutaller with root user.
 
-### [TEAfapiutaller](https://github.com/MuKonqi/teafunknown) is used as application to be an example.
+### [TEAfapiutaller](https://github.com/MuKonqi/TEAf) is used as application to be an example.
 ## Dependencies:
 Python3
 

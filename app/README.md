@@ -1,6 +1,6 @@
-# TEAfapiutaller (The Example App for apiutaller)
-## This a fork of [TEAfunknown](https://github.com/MuKonqi/teafunknown).
-## Bu, [TEAfunknown](https://github.com/MuKonqi/teafunknown)'un bir çatalıdır.
+# TEAfapiutaller (The Example App for Apiutaller)
+## This a fork of [TEAf](https://github.com/MuKonqi/TEAf).
+## Bu, [TEAf](https://github.com/MuKonqi/TEAf)'un bir çatalıdır.
 
 # License / Lisans:
 Apache 2.0

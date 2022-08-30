@@ -17,7 +17,7 @@
 # limitations under the License.
 
 lang="" # Don't chnage this!
-word_after_TEAf="apiutaller" # Don't forget change this!
+word_after_TEAf="Apiutaller" # Don't forget change this!
 
 import time
 import getpass
@@ -52,7 +52,7 @@ def entry():
 
     def def_wrong_answer():
         if lang == "en":
-            print("\n\n\n\n\n    FATAL ERROR!\n\n TEAf"+word_after_TEAf+" has encountered a fatal problem and needs to be closed and restarted.\n\nCurrently collecting some error information... %3 complete.")
+            print("\n\n\n\n\n    FATAL ERROR!\n\n TEAf "+word_after_TEAf+" has encountered a fatal problem and needs to be closed and restarted.\n\nCurrently collecting some error information... %3 complete.")
             time.sleep(1)
             print("Currently collecting some error information... %21 complete.")
             time.sleep(1)
@@ -67,7 +67,7 @@ def entry():
             print("Currently collecting some error information... %100 (completely) complete.")
             print("\nThese were a joke. Maybe it wasn't funny but since you gave 2 wrong answers this was triggered.\n\n\n\n\n")
         elif lang == "tr":
-            print("\n\n\n\n\n     ÖLÜMCÜL HATA!\n\n TEAf"+word_after_TEAf+" önemli bir sorunla karşılaştı ve kapatılıp yeniden başlatılması gerekiyor.\n\nŞu anda bazı hata bilgileri toplanıyor... %3 tamamlandı.")
+            print("\n\n\n\n\n     ÖLÜMCÜL HATA!\n\n TEAf "+word_after_TEAf+" önemli bir sorunla karşılaştı ve kapatılıp yeniden başlatılması gerekiyor.\n\nŞu anda bazı hata bilgileri toplanıyor... %3 tamamlandı.")
             time.sleep(1)
             print("Şu anda bazı hata bilgileri toplanıyor... %21 tamamlandı.")
             time.sleep(1)
@@ -189,7 +189,7 @@ def entry():
             print("Tüm sorular bitmiştir, zamanınızın bir kısmını bu programa ayaırdığınız için teşekkürler.")
             def_exit()          
 
-    print("Welcome to TEAf"+word_after_TEAf+" (The Example App for "+word_after_TEAf+")!\nTEAf"+word_after_TEAf+" (The Example App for "+word_after_TEAf+")'a hoşgeldiniz!")
+    print("Welcome to TEAf "+word_after_TEAf+" (The Example App for "+word_after_TEAf+")!\nTEAf "+word_after_TEAf+" (The Example App for "+word_after_TEAf+")'a hoşgeldiniz!")
     langinput=input("\nPlease select a language.\nLütfen bir dil seçiniz.\nOptions / Seçenekler: en / tr: ")
     if langinput == "en":
         lang="en"

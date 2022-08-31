@@ -13,7 +13,7 @@ README.md'de, kullanıcının Apiutaller'ı root kullanıcı ile çalıştırmas
 ## Bağımlılıklar:
 Python3
 
-Siz Python3'ü python3 olarak kullandığınız dağıtımınızdeposunda bulabilirsiniz.
+Siz Python3'ü python3 olarak kullandığınız dağıtımınız deposunda bulabilirsiniz.
 
 ## Desteklenen platformlar:
 Bütün GNU/Linux dağıtımları.

@@ -2,7 +2,7 @@
 #-*-coding:utf-8-*-
 
 ##### LICENSE !!!!!
-# Copyright (C) 2022 Muhammed Abdurrahman (MuKonqi)
+# Copyright (C) 2022, 2023 Muhammed Abdurrahman (MuKonqi)
 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-lang="" # Don't chnage this!
-word_after_TEAf="Apiutaller" # Don't forget change this!
+lang="" # Don't change this!
+word_after_TEAf="Apiutaller" # Don't forget to change this!
 
 import time
 import getpass
@@ -193,10 +193,8 @@ def entry():
     langinput=input("\nPlease select a language.\nLütfen bir dil seçiniz.\nOptions / Seçenekler: en / tr: ")
     if langinput == "en":
         lang="en"
-        print("English selected.")
         en()
     elif langinput == "tr":
         lang="tr"
-        print("Türkçe seçildi.")
         tr()
 entry()

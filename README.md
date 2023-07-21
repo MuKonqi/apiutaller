@@ -1,16 +1,24 @@
 # Apiutaller
-## Language: English
-[If you want to view this document in Turkish, you click on this sentence.](https://github.com/MuKonqi/apiutaller/blob/main/BENİOKU.md)
-## Using
-    Dear developer,
+[Bu belgeyi Türkçe dilinde görüntülemek için buraya tıklayın.](https://github.com/MuKonqi/apiutaller/blob/main/BENİOKU.md)
+# Using
+## Dear user,
+Don't forget to run apuitaller with root rights. You can use this command for this:
 
+```sudo python3 apiutaller.py```
+## Dear developer,
 You can make comment lines if you want skip some steps.
 
-You must set up variables in apiutaller.py.
+You must set up variables.
 
-In the README.md you have to specify that the user should run the Apiutaller with root user.
+In the your program README file(s) you must specify that the user should run the Apiutaller with root user.
 
-### [TEAfapiutaller](https://github.com/MuKonqi/TEAf) is used as application to be an example.
+If you are going to use it without changing the main code, just set in the section about variables according to the warnings.
+
+You must read warnings for variables.
+
+When you want to update Apiutaller, simply copy the main code section right after the 'VARIABLES' section below from [Apiutaller codes (apiutaller.py)](https://github.com/MuKonqi/apiutaller/blob/main/apiutaller.py) link.
+
+# [TEAfapiutaller](https://github.com/MuKonqi/TEAf) is used as application to be an example.
 ## Dependencies:
 Python3
 

@@ -1,22 +1,30 @@
 # Apiutaller
-## Dil: Türkçe
-[Bu belgeyi İngilizce olarak görüntelemek istiyorsanız bu cümlenin üstüne tıklayın.](https://github.com/MuKonqi/apiutaller/blob/main/README.md)
-## Kullanım
-    Sevgili geliştirici,
-Bazı adımları atlamak isterseniz yorum satırları yapabilirsiniz.
+[Click here to view this document in English.](https://github.com/MuKonqi/apiutaller/blob/main/BENİOKU.md)
+# Using
+## Sevgili kullanıcı,
+Apuitaller'ı root haklarıyla çalıştırmayı unutmayın. Bunun için şu komutu kullanabilirsiniz:
 
-Apiutaller'de değişkenleri ayarlamalısınız.
+```sudo python3 apiutaller.py```
+## Sayın geliştirici,
+Bazı adımları atlamak istiyorsanız yorum satırları oluşturabilirsiniz.
 
-README.md'de, kullanıcının Apiutaller'ı root kullanıcı ile çalıştırması gerektiğini belirtmelisiniz.
+Değişkenleri ayarlamanız gerekir.
 
-### [TEAfapiutaller](https://github.com/MuKonqi/TEAf) örnek olması için uygulama olarak kullanılmıştır.
+Programınızın BENİOKU dosyanızda/dosyalarınızda, kullanıcının Apiutaller'ı kök kullanıcıyla çalıştırması gerektiğini belirtmeniz gerekir.
+
+Ana kodu değiştirmeden kullanacaksanız değişkenler bölümünde uyarılara göre ayarlamanız yeterli.
+
+Değişkenler için uyarıları okumalısınız.
+
+Apiutaller'ı güncellemek istediğinizde [Apiutaller kodları (apiutaller.py)](https://github.com/MuKonqi/apiutaller/blob/main/apiutaller.py) bağlantısından aşağıdaki 'DEĞİŞKENLER' bölümünün hemen ardından gelen ana kod bölümünü kopyalamanız yeterlidir.
+
+# Örnek olması için uygulama olarak [TEAfapiutaller](https://github.com/MuKonqi/TEAf) kullanılmıştır.
 ## Bağımlılıklar:
 Python3
 
-Siz Python3'ü python3 olarak kullandığınız dağıtımınız deposunda bulabilirsiniz.
+Kullandığınız dağıtımın deposunda Python3'ü python3 olarak bulabilirsiniz.
 
 ## Desteklenen platformlar:
-Bütün GNU/Linux dağıtımları.
-
+Tüm GNU/Linux dağıtımları.
 ## Lisans:
-GNU General Public License, Version: 3
+GNU Genel Kamu Lisansı, Versiyon: 3

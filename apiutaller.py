@@ -60,7 +60,7 @@ python3_pip3_dependencies=any # Options: "<your program's dependencies>" and any
 
 # !!!!! MAIN CODE !!!!!
 
-Apiutaller="v2.1"
+Apiutaller="v2.1.1"
 
 import os
 import time
@@ -79,8 +79,8 @@ def main_install():
     def final():
         if r == 0:
             if lang == "default" or lang == "en":
-                exit("Successful, "+appname+" installed on your system.")
-            if lang == "default" or lang == "tr":
+                exit("Successful, "+appname+" installed to your system.")
+            elif lang == "tr":
                 exit("Başarılı, "+appname+" sisteminize yüklendi.") 
     
     if python_pip_dependencies != any:
@@ -147,7 +147,7 @@ def main_install():
     else:
         if lang == "default" or lang == "en":
             print("First installation step didn't succeed.")
-        if lang == "default" or lang == "tr":
+        elif lang == "tr":
             print("Birinci kurma adımı başarısız.")        
 
     if policyfile != any:
@@ -160,7 +160,7 @@ def main_install():
         else:
             if lang == "default" or lang == "en":
                 print("Second installation step didn't succeed.")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 print("İkinci kurma adımı başarısız.")   
     if appdesktopfile != any:
         if not os.path.isdir("/usr/share/applications"):
@@ -172,7 +172,7 @@ def main_install():
         else:
             if lang == "default" or lang == "en":
                 print("Third installation step didn't succeed.")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 print("üçüncü kurma adımı başarısız.") 
     
     if mainappfolder != any and mainappfoldername != any:
@@ -195,7 +195,7 @@ def main_install():
         else:
             if lang == "default" or lang == "en":
                 print("Last installation step didn't succeed.")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 print("Son kurma adımı başarısız.")           
 
 def control_and_install():
@@ -208,7 +208,7 @@ def control_and_install():
         elif debian_apt_support == "false":
             if lang == "default" or lang == "en":
                 exit("Fatal error!\nYou can't install "+appname+" because Debian GNU/Linux based distributions not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü Debian GNU/Linux tabanlı dağıtımlar "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")        
 
 
@@ -221,7 +221,7 @@ def control_and_install():
         elif fedora_dnf_support == "false":
             if lang == "default" or lang == "en":
                 exit("Fatal error!\nYou can't install "+appname+" because Fedora Linux based distributions not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü Fedora Linux tabanlı dağıtımlar "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")        
 
     elif os.path.isfile("/bin/pacman") or os.path.isfile("/usr/bin/pacman"):
@@ -233,7 +233,7 @@ def control_and_install():
         elif arch_pacman_support == "false":
             if lang == "default" or lang == "en":
                 exit("Fatal error!\nYou can't install "+appname+" because Arch Linux based distributions not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü Arch Linux tabanlı dağıtımlar "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")          
 
     elif os.path.isfile("/usr/bin/yum") and not os.path.isfile("/etc/fedora-release"):
@@ -245,7 +245,7 @@ def control_and_install():
         elif rhel_yum_support == "false":
             if lang == "default" or lang == "en":
                 exit("Fatal error!\nYou can't install "+appname+" because the distribution with yum package manager you are using not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü sizin kulladığınız dağıtım ile yum paket yöneticisi "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")         
 
     elif os.path.isfile("/usr/bin/zypper"):
@@ -257,7 +257,7 @@ def control_and_install():
         elif opensuse_zypper_support == "false":
             if lang == "default" or lang == "en":
                 exit("Fatal error!\nYou can't install "+appname+" because OpenSUSE not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü OpenSUSE "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")  
 
     elif os.path.isfile("/etc/solus-release"):
@@ -269,7 +269,7 @@ def control_and_install():
         elif solus_eopkg_support == "false":
             if lang == "default" or lang == "en":
                 exit("Fatal error!\nYou can't install "+appname+" because Solus not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü Solus "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")         
 
     elif os.path.isfile("/etc/pisilinux-release"):
@@ -281,7 +281,7 @@ def control_and_install():
         elif pisi_pisi_support == "false":
             if lang == "default" or lang == "en":
                 exit("Fatal error!\nYou can't install "+appname+" because Pisi GNU/Linux not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü Pisi GNU/Linux "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")         
 
     elif os.path.isdir("/etc/xbps.d"):
@@ -293,7 +293,7 @@ def control_and_install():
         elif void_xbps_support == "false":
             if lang == "default" or lang == "en":
                 exit("Fatal error!\nYou can't install "+appname+" because the Void Linux not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü Void Linux "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")        
 
     elif platform == "linux":
@@ -302,12 +302,12 @@ def control_and_install():
         else:
             if lang == "default" or lang == "en":
                 exit("Fatal error!\nYou can't install "+appname+" because the distribution you are using not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü sizin kulladığınız dağıtım "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")
     else:
         if lang == "default" or lang == "en":
             exit("Fatal error!\nYou can't install "+appname+" because the OS you are using not supported from "+appname+". If you think this is a mistake, please contact with "+appdev+".")
-        if lang == "default" or lang == "tr":
+        elif lang == "tr":
             exit("Ölümcül hata!\nSiz "+appname+" uygulamasını yükleyemezsiniz çünkü sizin kullanıdığınız İS "+appname+" tarafından desteklenmiyor. Bunu hata olduğunu düşünüyorsanız "+appdev+" ile iletişime geçin.")
     
 
@@ -317,7 +317,7 @@ def main_uninstall():
     if os.path.isfile(appfolder+appfilenew):
         if lang == "default" or lang == "en":
             exit("First uninstallation step didn't succeed.")
-        if lang == "default" or lang == "tr":
+        elif lang == "default" or lang == "tr":
             exit("Birinci kaldırma adımı başarısız.")
             
     if policyfile != any:    
@@ -325,7 +325,7 @@ def main_uninstall():
         if os.path.isfile("/usr/share/polkit-1/actions/"+policyfile):
             if lang == "default" or lang == "en":
                 exit("Second uninstallation step didn't succeed.")
-            if lang == "default" or lang == "tr":
+            elif lang == "default" or lang == "tr":
                 exit("İkinci kaldırma adımı başarısız.")
     
     if appdesktopfile != any:
@@ -333,7 +333,7 @@ def main_uninstall():
         if os.path.isfile("/usr/share/applications/"+appdesktopfile):
             if lang == "default" or lang == "en":
                 exit("Third uninstallation step didn't succeed.")
-            if lang == "default" or lang == "tr":
+            elif lang == "default" or lang == "tr":
                 exit("Üçüncü kaldırma adımı başarısız.")
 
     if mainappfolder != any and mainappfoldername != any:
@@ -341,13 +341,13 @@ def main_uninstall():
         if os.path.isdir(mainappfolder+mainappfoldername):
             if lang == "default" or lang == "en":
                 exit("Last uninstallation step didn't succeed.")
-            if lang == "default" or lang == "tr":
+            elif lang == "tr":
                 exit("Son kaldırma adımı başarısız.")
     
     if r == 0:
         if lang == "default" or lang == "en":
-            exit("Succesfull, "+appname+" is removed on your system. You can share your feedback with "+appdev+".")
-        if lang == "default" or lang == "tr":
+            exit("Succesfull, "+appname+" is uninstalled from your system. You can share your feedback with "+appdev+".")
+        elif lang == "tr":
             exit("Başarılı ,"+appname+" sisteminizden kaldırıldı. Geri bildiriminizi "+appdev+" ile paylaşabilirsiniz.")
 
 def main_reinstall():
@@ -356,20 +356,20 @@ def main_reinstall():
     main_uninstall()
     if lang == "default" or lang == "en":
         print("Uninstallation is completed. Installation is starting.")
-    if lang == "default" or lang == "tr":
+    elif lang == "tr":
         print("Kaldırma tamamlandı. Yüklemeye geçiliyor.")
     control_and_install()
     if lang == "default" or lang == "en":
-        exit("Succesfull, "+appname+" is reinstalled on your system.")
-    if lang == "default" or lang == "tr":
-        exit("Başarılı, "+appname+" siteminizde yeniden yüklendi.")
+        exit("Succesfull, "+appname+" is reinstalled to your system.")
+    elif lang == "tr":
+        exit("Başarılı, "+appname+" sisteminize yeniden yüklendi.")
 
 
 
 def operation():
     if lang == "default" or lang == "en":
         oa=input("What do you want to do? You should type 'install' if you want to install "+appname+", 'reinstall' if you want to reinstall, 'uninstall' to uninstall; type anything to exit Apiutaller. Your decision: ")
-    if lang == "default" or lang == "tr":
+    elif lang == "tr":
         oa=input("Ne yapmak istersiniz? Eğer "+appname+" programını kurmak istiyorsanız 'kur', yeniden kurmak istiyorsanız 'yeniden kur', kaldırmak için 'kaldır'; Apiutaller'den çıkış için herhangi bir şey yazınız. Kararınız: ")
     if oa == "install" or oa == "kur":
         control_and_install()
@@ -403,7 +403,7 @@ def license():
             license()
         else:
             license()
-    if lang == "default" or lang == "tr": 
+    elif lang == "tr": 
         if ls == 0:
             print("Şuanda "+appname+" için ayarlı Apiutaller "+Apiutaller+" kurulum sihirbazına hoş geldiniz!\nApiutaller, GPLv3 ile lisanslanmıştır.\n"+appname+" ise "+licensename+" ile lisanslanmıştır.\n")  
         li=input("Bu lisansları kabul ediyorsanız 'e', etmiyorsanız 'h'; bu lisanslarla ilgili bilgi göstermek için 'g' yazınız. Karar: ")
@@ -436,23 +436,20 @@ def welcome():
         license()
     else:
         welcome()
-
+    
 if "--install" in args or "--kur" in args:
     print("Copyright (C) 2022, 2023 MuKonqi (Muhammed Abdurrahman)")
     print("If you do not press Ctrl+C within 3 seconds, the installation will start and you will be deemed to have accepted both the GPLv3 license used by Apiutaller and the "+licensename+" license used by the "+appname+" program.")
-    print("3 saniye içinde Ctrl+C tuşlarına basmazsanız, kurulum başlayacak ve hem Apiutaller tarafından kullanılan GPLv3 lisansını hem de "+appname+" programı tarafından kullanılan "+licensename+" lisansını kabul etmiş sayılacaksınız.")    
     time.sleep(3)
     control_and_install()
 elif "--reinstall" in args or "--yeniden" in args and "kur" in args:
     print("Copyright (C) 2022, 2023 MuKonqi (Muhammed Abdurrahman)")
     print("If you do not press Ctrl+C within 3 seconds, the reinstallation will start and you will be deemed to have accepted both the GPLv3 license used by Apiutaller and the "+licensename+" license used by the "+appname+" program.")
-    print("3 saniye içinde Ctrl+C tuşlarına basmazsanız, yeniden kurulum başlayacak ve hem Apiutaller tarafından kullanılan GPLv3 lisansını hem de "+appname+" programı tarafından kullanılan "+licensename+" lisansını kabul etmiş sayılacaksınız.")    
     time.sleep(3)
     main_reinstall()    
-elif "--uninstall" in args or "--kaldır" in args:
+elif "--uninstall" in args or "--sil" in args:
     print("Copyright (C) 2022, 2023 MuKonqi (Muhammed Abdurrahman)")
     print("If you do not press Ctrl+C within 3 seconds, the uninstallation will start and you will be deemed to have accepted both the GPLv3 license used by Apiutaller and the "+licensename+" license used by the "+appname+" program.")
-    print("3 saniye içinde Ctrl+C tuşlarına basmazsanız, kaldırma başlayacak ve hem Apiutaller tarafından kullanılan GPLv3 lisansını hem de "+appname+" programı tarafından kullanılan "+licensename+" lisansını kabul etmiş sayılacaksınız.")    
     time.sleep(3)
     main_uninstall()
 else:

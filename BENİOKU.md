@@ -4,15 +4,19 @@
 Lütfen Apiutaller programını kök yetkileriyle çalıştırın (bunun için sudo kullanabilirsiniz). Ayrıca, programı çalıştırmadan, sihirbazın hazırlandığı programın dizinine giriş yapın: `cd <program dizininin adı>` (tabii ki işaretler olmadan)
 ## Normal
 Parametre yok.
+
 Komut: `sudo python3 apiutaller.py`
 ## Hızlı kurulum
 Parametre: --install
+
 Komut: `sudo python3 apiutaller.py --install`
 ## Hızlı yeniden yükleme
 Parametre: --reinstall
+
 Komut: `sudo python3 apiutaller.py --reinstall`
 ## Hızlı kaldırma
 Parametre: --uninstall
+
 Komut: `sudo python3 apiutaller.py --uninstall`
 # Ayarlama (programı kendi uygulaması için kullanacak olanlar)
 Bazı adımları atlamak istiyorsanız yorum satırları oluşturabilirsiniz.

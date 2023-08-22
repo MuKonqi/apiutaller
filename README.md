@@ -4,16 +4,16 @@
 Please run Apiutaller with root rights (you can use sudo for this). Also, without running the program, log in to the directory of the program where the wizard is prepared: `cd <name of the directory of the program>` (without signs of course)
 ## Normal
 No parameters.
-Command: ```sudo python3 apiutaller.py``
+Command: `sudo python3 apiutaller.py`
 ## Quick installation
-Parameter: "--install"
-Command: ```sudo python3 apiutaller.py --install``
+Parameter: --install
+Command: ```sudo python3 apiutaller.py --install`
 ## Quick reinstallation
-Parameter: "--reinstall"
-Command: ```sudo python3 apiutaller.py --reinstall``
+Parameter: --reinstall
+Command: `sudo python3 apiutaller.py --reinstall`
 ## Quick uninstallation
-Parameter: "--uninstall"
-Command: ```sudo python3 apiutaller.py --uninstall``
+Parameter: --uninstall
+Command: `sudo python3 apiutaller.py --uninstall`
 # Setting (for those who will use the program for their own application)
 You can make comment lines if you want skip some steps.
 

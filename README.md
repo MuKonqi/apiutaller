@@ -7,17 +7,17 @@ No parameters.
 
 Command: `sudo python3 apiutaller.py`
 ## Quick installation
-Parameter: --install
+Parameter: install
 
-Command: `sudo python3 apiutaller.py --install`
+Command: `sudo python3 apiutaller.py install`
 ## Quick reinstallation
-Parameter: --reinstall
+Parameter: reinstall
 
-Command: `sudo python3 apiutaller.py --reinstall`
+Command: `sudo python3 apiutaller.py reinstall`
 ## Quick uninstallation
-Parameter: --uninstall
+Parameter: uninstall
 
-Command: `sudo python3 apiutaller.py --uninstall`
+Command: `sudo python3 apiutaller.py uninstall`
 # Setting (for those who will use the program for their own application)
 You can make comment lines if you want skip some steps.
 

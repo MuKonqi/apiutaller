@@ -7,17 +7,17 @@ Parametre yok.
 
 Komut: `sudo python3 apiutaller.py`
 ## Hızlı kurulum
-Parametre: --install
+Parametre: kur
 
-Komut: `sudo python3 apiutaller.py --install`
+Komut: `sudo python3 apiutaller.py kur`
 ## Hızlı yeniden yükleme
-Parametre: --reinstall
+Parametre: yenidenkur
 
-Komut: `sudo python3 apiutaller.py --reinstall`
+Komut: `sudo python3 apiutaller.py yenidenkur`
 ## Hızlı kaldırma
-Parametre: --uninstall
+Parametre: kaldır
 
-Komut: `sudo python3 apiutaller.py --uninstall`
+Komut: `sudo python3 apiutaller.py kaldır`
 # Ayarlama (programı kendi uygulaması için kullanacak olanlar)
 Bazı adımları atlamak istiyorsanız yorum satırları oluşturabilirsiniz.
 
